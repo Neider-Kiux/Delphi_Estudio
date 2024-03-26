@@ -1,0 +1,20 @@
+unit ifStatement;
+
+interface
+type
+  TPersona = class
+    nombre: string;
+  public
+    procedure saludar;
+  end;
+
+implementation
+
+{ TPersona }
+
+procedure TPersona.saludar;
+begin
+  Writeln('Hola Mundo');
+end;
+
+end.

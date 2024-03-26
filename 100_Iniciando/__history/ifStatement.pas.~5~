@@ -1,0 +1,37 @@
+unit ifStatement;
+
+interface
+type
+  TPersona = class
+    nombre: string;
+  public
+    procedure saludar;
+  end;
+
+  TCarro = class
+    marca: string;
+  public
+    procedure arrancar;
+  end;
+
+var
+  ObjetoPersona: Tpersona;
+  ObjetoCarro: TCarro;
+
+implementation
+
+{ TPersona }
+
+procedure TPersona.saludar;
+begin
+  Writeln('Hola Mundo');
+end;
+
+{ TCarro }
+
+procedure TCarro.arrancar;
+begin
+  Writeln('El carro arranco');
+end;
+
+end.
