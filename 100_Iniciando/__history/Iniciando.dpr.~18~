@@ -18,9 +18,8 @@ begin
   try
      ObjetoIf.ifEjemplo;
      ObjetoCase.caseEjemplo;
-     ObjetoFor.leters;
+     //ObjetoFor.leters;
      ObjetoWhile.mientrasNumero;
-     ObjetoWhile.sumaRandom;
   except
     on E: Exception do
       Writeln(E.ClassName, ': ', E.Message);

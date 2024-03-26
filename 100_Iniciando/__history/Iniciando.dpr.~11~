@@ -6,10 +6,14 @@ program Iniciando;
 
 uses
   System.SysUtils,
-  ifStatement in 'ifStatement.pas';
+  Statements in 'Statements.pas';
+
+var
+  ObjetoIf: Tifstatement;
 
 begin
   try
+     ObjetoIf.ifEjemplo;
     { TODO -oUser -cConsole Main : Insert code here }
   except
     on E: Exception do

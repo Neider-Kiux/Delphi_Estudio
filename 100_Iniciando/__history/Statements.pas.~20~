@@ -1,8 +1,6 @@
 unit Statements;
 
 interface
-uses
-  System.SysUtils;
 
 type
   TIfstatement = class
@@ -101,7 +99,6 @@ begin
   while I < 500 do
   begin
     WriteLn('Random Number: ' + IntToStr(I));
-    I := I + Random(100);
   end;
 end;
 

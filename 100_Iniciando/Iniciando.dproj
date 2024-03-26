@@ -89,7 +89,6 @@
         <DelphiCompile Include="$(MainSource)">
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
-        <DCCReference Include="ifStatement.pas"/>
         <DCCReference Include="Statements.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>

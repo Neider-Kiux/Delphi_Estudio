@@ -12,15 +12,12 @@ var
   ObjetoIf: TIfstatement;
   ObjetoCase: TCaseStatement;
   ObjetoFor: TForStatement;
-  ObjetoWhile: TWhileStatement;
 
 begin
   try
      ObjetoIf.ifEjemplo;
      ObjetoCase.caseEjemplo;
-     ObjetoFor.leters;
-     ObjetoWhile.mientrasNumero;
-     ObjetoWhile.sumaRandom;
+     ObjetoFor.numbers;
   except
     on E: Exception do
       Writeln(E.ClassName, ': ', E.Message);

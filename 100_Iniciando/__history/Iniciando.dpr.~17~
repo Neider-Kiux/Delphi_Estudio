@@ -20,7 +20,6 @@ begin
      ObjetoCase.caseEjemplo;
      ObjetoFor.leters;
      ObjetoWhile.mientrasNumero;
-     ObjetoWhile.sumaRandom;
   except
     on E: Exception do
       Writeln(E.ClassName, ': ', E.Message);

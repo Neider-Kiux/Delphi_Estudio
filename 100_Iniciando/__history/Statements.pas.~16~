@@ -1,8 +1,6 @@
 unit Statements;
 
 interface
-uses
-  System.SysUtils;
 
 type
   TIfstatement = class
@@ -19,12 +17,6 @@ type
   public
     procedure numbers;
     procedure leters;
-  end;
-
-  TWhileStatement = class
-  public
-    procedure mientrasNumero;
-    procedure sumaRandom;
   end;
 
 implementation
@@ -67,41 +59,14 @@ end;
 procedure TForStatement.leters;
 begin
   for var AChar := 'a' to 'z' do
-    Writeln(AChar);
+    WriteLn(AChar);
 end;
 
 procedure TForStatement.numbers;
 begin
   for var I := 0 to 10 do
   begin
-    Writeln(I);
-  end;
-end;
-
-{ TWhileStatement }
-
-procedure TWhileStatement.mientrasNumero;
-var
-  numero: Integer;
-begin
-  numero := 0;
-  while (numero < 10) do
-  begin
-    Writeln(numero);
-    numero := numero + 1;
-  end;
-
-end;
-
-procedure TWhileStatement.sumaRandom;
-var I: Integer;
-begin
-  Randomize;
-  I := 1;
-  while I < 500 do
-  begin
-    WriteLn('Random Number: ' + IntToStr(I));
-    I := I + Random(100);
+    WriteLn(I);
   end;
 end;
 

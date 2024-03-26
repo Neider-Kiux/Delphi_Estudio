@@ -1,0 +1,49 @@
+unit Statements;
+
+interface
+type
+  TIfstatement =  class
+  public
+    procedure ifEjemplo;
+  end;
+
+  TCaseStatement = class
+  public
+    procedure caseEjemplo;
+  end;
+
+implementation
+
+{ ifstatement }
+
+procedure TIfstatement.ifEjemplo;
+var
+  ischeket: Boolean;
+begin
+  ischeket := True;
+  if (ischeket) then
+    Writeln('Is checket')
+  else
+    Writeln('Is´n checket');
+end;
+
+{ TCaseStatement }
+
+procedure TCaseStatement.caseEjemplo;
+var
+Number: Integer;
+AText: string;
+begin
+Number := 1;
+case Number of
+1: AText := 'One';
+2: AText := 'Two';
+3: AText := 'Three';
+end;
+if AText <> '' then
+WriteLn(AText);
+
+end;
+
+end.
+
